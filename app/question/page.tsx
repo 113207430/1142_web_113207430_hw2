@@ -1,7 +1,9 @@
 "use client"
-import { useRouter } from "next/navigation";
-import { useState } from "react";
 import Link from "next/link";
+import { useState } from "react";
+import { useRouter } from "next/navigation";
+import { usePsyDataStore } from "../../store/store";
+
 
 export default function Question() {
   const router = useRouter();
