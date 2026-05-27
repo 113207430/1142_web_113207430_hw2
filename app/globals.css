@@ -1,7 +1,9 @@
 @import "tailwindcss";
-@import "@heroui/styles"; 
-
+@import "@heroui/styles";
 
 body {
-  margin:0;
+  font-family: 'Noto Serif TC', serif !important;
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+  text-shadow: 1px 1px 4px rgba(232, 221, 221, 0.8);
 }

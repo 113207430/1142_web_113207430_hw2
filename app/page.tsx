@@ -1,7 +1,6 @@
-"use client"
-import Link from "next/link";
-import { useState, useEffect } from "react";
-import ActionButton from "@/component/actionButton";
+"use client";
+import ActionButton from "@/component/ActionButton";
+import Emoticons from "@/component/emoticons";
 // import {ColorSlider, Label} from "@heroui/react";
 
 export default function Home() {
@@ -16,18 +15,11 @@ export default function Home() {
 
 
   return (
-    <div className="flex flex-col justify-center items-center gap-4">
+    <div className="flex flex-col justify-center items-center gap-4 pt-6">
 
     歡迎！
-    <div className="flex flex-wrap gap-3">
-      <Button>Primary</Button>
-      <Button variant="secondary">Secondary</Button>
-      <Button variant="tertiary">Tertiary</Button>
-      <Button variant="outline">Outline</Button>
-      <Button variant="ghost">Ghost</Button>
-      <Button variant="danger">Danger</Button>
-      <Button variant="danger-soft">Danger Soft</Button>
-    </div>
+    <Emoticons> </Emoticons>
+    
 
 
     {/* <ColorSlider channel="hue" className="w-full max-w-xs" defaultValue="hsl(0, 100%, 50%)">
@@ -38,8 +30,7 @@ export default function Home() {
       </ColorSlider.Track>
     </ColorSlider> */}
     
-    {/* <Link className="text-amber-100 bg-black px-3 py-2 rounded-3xl" href="/question">START!</Link> */}
-    
+    <ActionButton text="START!" path="/question" />
     </div>
   );
 } 
