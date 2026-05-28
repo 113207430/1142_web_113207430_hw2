@@ -37,7 +37,7 @@ const quizData = [
     image: "/4.jpg",
     options: [
       { text: "讓他先", value: 0 },
-      { text: "讓他先然後狂敲門", value: 2 },
+      { text: "讓他先然後狂敲門，所以輪到你的時候可以慢慢來", value: 2 },
       { text: "自己先然後速戰速決", value: 1 },
       { text: "自己先然後慢慢享受如廁時光", value: 3 },
     ],

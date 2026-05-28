@@ -15,7 +15,7 @@ export default function Home() {
 
 
   return (
-    <div className="flex flex-col justify-center items-center gap-4 pt-6 text-3xl">
+    <div className="flex flex-col justify-center items-center gap-4 pt-6 text-3xl" >
 
     歡迎！
     <Emoticons> </Emoticons>
