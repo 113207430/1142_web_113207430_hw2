@@ -57,7 +57,14 @@ else resultKey = "hell3";
       <div className="text-center">{result.desc}</div>
       <Link
         href="/"
-        className="text-amber-100 bg-black px-3 py-2 rounded-3xl"
+        className=" px-6 py-3 rounded-3xl
+  bg-white/20 backdrop-blur-md
+  border border-white/30
+  text-black font-bold
+  cursor-pointer
+  transition-transform duration-200
+  hover:scale-105 hover:bg-white/30
+  active:scale-95"
         onClick={playagain}
       >
         RESTART!

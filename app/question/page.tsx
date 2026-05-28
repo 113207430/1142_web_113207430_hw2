@@ -27,7 +27,7 @@ export default function Question() {
 
   return (
     <div className="w-full px-4 pt-6">
-  <div className="w-full">{"Q" + (questionIndex + 1) + "." + q.title}</div>
+  <div className="w-full text-xl">{"Q" + (questionIndex + 1) + "." + q.title}</div>
 
   {q.image && (
     <img

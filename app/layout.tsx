@@ -30,7 +30,10 @@ export default function RootLayout({
       lang="zh-TW"
       translate="no"
     >
-      <body className="flex justify-center w-full pt-4 pb-4">
+      <body className="flex justify-center w-full pt-4 pb-4" style={{ 
+    backgroundImage: "url('/b.png')",
+    backgroundSize: "cover",
+    backgroundPosition: "center"}} >
         <ClientLayout>
           {children}
         </ClientLayout>
