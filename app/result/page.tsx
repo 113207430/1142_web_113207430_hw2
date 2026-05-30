@@ -4,11 +4,11 @@ import { usePsyStore } from "@/store/store";
 import { useRouter } from "next/navigation";
 
 const resultMap: Record<string, { title: string; image: string }> = {
-  heaven3: { title: "超棒天堂", image: "/heaven3.png" },
-  heaven2: { title: "不錯天堂", image: "/heaven32.png" },
-  heaven1: { title: "普通天堂", image: "/heaven1.png" },
-  hell1:   { title: "普通地獄", image: "/hell1.png" },
-  hell2:   { title: "很爛地獄", image: "/hell2.png" },
+  heaven3: { title: "超棒天堂", image: "/results/heaven3.png" },
+  heaven2: { title: "不錯天堂", image: "/results/heaven32.png" },
+  heaven1: { title: "普通天堂", image: "/results/heaven1.png" },
+  hell1:   { title: "普通地獄", image: "/results/hell1.png" },
+  hell2:   { title: "很爛地獄", image: "/results/hell2.png" },
   hell3:   { title: "最爛地獄", image: "/hell3.png" },
 };
 
