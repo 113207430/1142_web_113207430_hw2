@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 
 const bgMap: Record<string, string> = {
   "/": "url('/hhh.png')",
-  "/question": "url('/result.jpg')",
+  "/question": "url('/gg.jpg')",
   "/prepare": "url('/accounter.png')",
   "/result": "url('/result.jpg')",
 };
