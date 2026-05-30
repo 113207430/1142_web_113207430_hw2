@@ -5,7 +5,7 @@ import { create } from 'zustand'
 
 const quizData = [
   {
-    title: "電車難題",
+    title: "電車難題。你正在駕駛一輛失速的電車，改道不改道，你會做什麼選擇呢？",
     image: "/1.png",
     options: [
       { text: "不改道撞五人", value: 1 },

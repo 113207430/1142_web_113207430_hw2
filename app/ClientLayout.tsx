@@ -3,7 +3,7 @@ import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 
 const bgMap: Record<string, string> = {
-  "/": "url('/hhh.png')",
+  "/": "url('/hhhh.png')",
   "/question": "url('/gg.jpg')",
   "/prepare": "url('/accounter.png')",
   "/result": "url('/result.jpg')",
