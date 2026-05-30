@@ -1,36 +1,23 @@
 "use client";
 import ActionButton from "@/component/ActionButton";
 import Emoticons from "@/component/emoticons";
-// import {ColorSlider, Label} from "@heroui/react";
 
 export default function Home() {
-
-
-  //階段名稱        路由規劃
-  // 1.歡迎畫面    /
-  // 2.答題       /question
-  // 3.準備看結果  /prepare
-  // 4.看結果     /result
-  // https://psy-test.com/love/result?id=10
-
-
   return (
-    <div className="flex flex-col justify-center items-center gap-4 pt-6 text-3xl" >
-
-    歡迎！
-    <Emoticons> </Emoticons>
-    
-
-
-    {/* <ColorSlider channel="hue" className="w-full max-w-xs" defaultValue="hsl(0, 100%, 50%)">
-      <Label>Hue</Label>
-      <ColorSlider.Output />
-      <ColorSlider.Track>
-        <ColorSlider.Thumb />
-      </ColorSlider.Track>
-    </ColorSlider> */}
-    
-    <ActionButton text="START!" path="/question" />
+    <div className="flex flex-col h-full p-6">
+      <div className="flex-1 flex flex-col justify-center items-center gap-4">
+        <p className="text-center text-lg leading-relaxed">
+          歡迎光臨！<br />
+          你會不會有時候很好奇<br />
+          自己死掉之後到底會上天堂還是下地獄？<br />
+          我也會：）<br />
+          馬上幫自己測看看吧
+        </p>
+        {/* <Emoticons /> */}
+      </div>
+      <div className="flex justify-center pb-4" style={{color: "#000000", boxShadow: "0 0 8px 2px rgba(0, 0, 0, 0.3)"}}>
+        <ActionButton text="START!" path="/question" />
+      </div>
     </div>
   );
-} 
+}
