@@ -12,8 +12,12 @@ const bgMap: Record<string, string> = {
 
 function getAudioSrc(pathname: string, score: number): string {
   if (pathname === "/result") {
-    if (score > 23) return "/mp3s/hell3.mp3";
-    if (score > 18) return "/mp3s/hell2.mp3";
+    if (score <= 4)  return "/mp3s/heaven3.mp3";
+    if (score <= 8)  return "/mp3s/heaven2.mp3";
+    if (score <= 13) return "/mp3s/heaven1.mp3";
+    if (score <= 18) return "/mp3s/hell1.mp3";
+    if (score <= 23) return "/mp3s/hell2.mp3";
+    return "/mp3s/hell3.mp3";
   }
   return "/mp3s/3.mp3";
 }
