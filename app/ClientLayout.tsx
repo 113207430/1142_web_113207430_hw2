@@ -79,7 +79,8 @@ export default function ClientLayout({ children }: { children: React.ReactNode }
     <div
       className="relative max-w-[480px] w-full mx-auto rounded-3xl overflow-y-auto"
       style={{
-        height: "calc(100vh - 2rem)",
+        height: "min(calc(100vh - 3.5rem), 622px)",
+        width: "min(100%, 350px)",
         backgroundImage: bg,
         backgroundSize: "cover",
         backgroundPosition: "center top",

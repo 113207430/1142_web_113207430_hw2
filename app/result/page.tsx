@@ -43,25 +43,27 @@ export default function Result() {
     <div className="flex flex-col h-full p-6">
       <div className="flex-1 flex flex-col justify-center items-center gap-3"
       style={{ color: "#5B4B00"}}>
-        <p className="text-center text-lg">我親愛的朋友，你死後將會被分配到：</p>
+        <p className="text-center text-base">我親愛的朋友，你死後將會被分配到：</p>
         <img
           src={result.image}
           alt={result.title}
-          className="w-full rounded-2xl"
+          className="w-full max-w-[280px] rounded-2xl"
           style={{ filter: "drop-shadow(0px 8px 10px rgba(0,0,0,0.5))" }}
         />
       </div>
       <div className="flex flex-row items-center justify-center gap-3 pb-4 mt-3">
         <button
           onClick={() => downloadImage(result.image, result.title)}
-          className="px-6 py-3 rounded-3xl bg-white/20 backdrop-blur-md border font-bold cursor-pointer transition-transform duration-200 hover:scale-105 hover:bg-white/30 active:scale-95"
+          className="px-6 py-3 rounded-3xl bg-white/20 backdrop-blur-md border font-bold 
+          cursor-pointer transition-transform duration-200 hover:scale-105 hover:bg-white/30 active:scale-95 text-xs"
           style={{ color: "#5B4B00", boxShadow: "0 0 8px 2px rgba(91, 75, 0, 0.3)" }}
         >
-          下載下來給媽咪看
+          下載給媽咪看
         </button>
         <Link
           href="/"
-          className="px-6 py-3 rounded-3xl bg-white/20 backdrop-blur-md border font-bold cursor-pointer transition-transform duration-200 hover:scale-105 hover:bg-white/30 active:scale-95"
+          className="px-6 py-3 rounded-3xl bg-white/20 backdrop-blur-md border font-bold 
+          cursor-pointer transition-transform duration-200 hover:scale-105 hover:bg-white/30 active:scale-95 text-xs"
           style={{ color: "#5B4B00", boxShadow: "0 0 8px 2px rgba(91, 75, 0, 0.3)" }}
           onClick={playagain}
         >

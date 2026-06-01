@@ -27,7 +27,7 @@ export default function Question() {
 
   return (
     <div className="w-full px-4 pt-6">
-  <div className="w-full text-xl">{"Q" + (questionIndex + 1) + "." + q.title}</div>
+  <div className="w-full text-base">{"Q" + (questionIndex + 1) + "." + q.title}</div>
 
   {q.image && (
     <img
@@ -37,28 +37,30 @@ export default function Question() {
     />
   )}
 
-  {q.options.map((option: { text: string; value: number }, index: number) => (
-    <div
-      key={index}
-      onClick={() => nextQuestion(index)}
-      className="
-        cursor-pointer
-        bg-white/20 backdrop-blur-sm
-        border border-white/40
-        text-black font-bold
-        px-4 py-3 rounded-2xl
-        min-h-[3rem] h-auto
-        whitespace-normal break-words
-        transition-transform duration-200
-        hover:scale-105 hover:shadow-lg hover:-translate-y-1
-        active:scale-95
-        w-full
-        mt-2.5
-      "
-    >
-      {option.text}
-    </div>
-  ))}
+  
+{q.options.map((option: { text: string; value: number }, index: number) => (
+        <button
+          key={index}
+          onClick={() => nextQuestion(index)}
+          className="
+            cursor-pointer
+            bg-white/20 backdrop-blur-sm
+            border border-white/40
+            text-black font-bold
+            px-4 py-3 rounded-2xl
+            min-h-[3rem] h-auto
+            whitespace-normal break-words
+            transition-transform duration-200
+            hover:scale-105 hover:shadow-lg hover:-translate-y-1
+            active:scale-95
+            w-full
+            mt-2.5
+            text-left
+          "
+        >
+          {option.text}
+        </button>
+      ))}
 </div>
   );
 }

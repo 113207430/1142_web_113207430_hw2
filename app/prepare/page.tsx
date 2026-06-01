@@ -6,7 +6,7 @@ export default function Question() {
 
 
   return (
-    <div className="flex flex-col justify-center items-center gap-4 pt-6 text-2xl mt-10">
+    <div className="flex flex-col justify-center items-center gap-4 pt-6 text-base mt-10">
     會計師雅雯已經幫你計算好分數了...
     <Link className=" px-6 py-3 rounded-3xl
   bg-white/20 backdrop-blur-md

@@ -30,11 +30,14 @@ export default function RootLayout({
       lang="zh-TW"
       translate="no"
     >
-      <body className="h-screen flex justify-center items-center py-7 box-border" 
-      style={{ 
+    <body 
+  className="h-screen flex justify-center items-center py-7 box-border" 
+  style={{ 
     backgroundImage: "url('/backgrounds/l.jpg')",
     backgroundSize: "cover",
-    backgroundPosition: "center"}} >
+    backgroundPosition: "center"
+  }}
+>
         <ClientLayout>
           {children}
         </ClientLayout>
