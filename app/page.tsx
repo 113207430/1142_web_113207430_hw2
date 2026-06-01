@@ -13,7 +13,7 @@ export default function Home() {
         我也會：）<br />
         所以馬上幫自己測看看吧！
       </p>
-      <div className="mb-150">
+      <div className="mb-140">
         <ActionButton text="開始測驗!" path="/question" />
       </div>
     </div>
